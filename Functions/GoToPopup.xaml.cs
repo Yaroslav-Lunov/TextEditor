@@ -37,9 +37,9 @@ namespace Text_Editor
         private int GoToLine(int lineNumber)
         {
             TextBox textBox = _owner.textBox;
-            if (textBox.LineCount > lineNumber - 1 && lineNumber - 1 > -1)
+            if (textBox.LineCount > lineNumber && lineNumber > -1)
             {
-                int lineCharacterIndex = textBox.GetCharacterIndexFromLineIndex(lineNumber - 1);
+                int lineCharacterIndex = textBox.GetCharacterIndexFromLineIndex(lineNumber);
                 textBox.CaretIndex = lineCharacterIndex;
                 textBox.Focus();
                 return 0;

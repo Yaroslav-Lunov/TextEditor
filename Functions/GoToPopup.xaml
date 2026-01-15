@@ -21,7 +21,7 @@
 
         <Label Grid.Column="0" Grid.Row="0" Margin="5" Padding="0" Content="Go To:" VerticalAlignment="Center"/>
 
-        <xctk:IntegerUpDown Minimum="1" Grid.Column="0" Grid.Row="0" Margin="45,5,5,5" Name="what"/>
+        <xctk:IntegerUpDown Minimum="0" Grid.Column="0" Grid.Row="0" Margin="45,5,5,5" Name="what"/>
 
         <Button Grid.Column="2" Grid.Row="0" Content="Go" Margin="5" Click="Go_Click"/>
         <Button Grid.Column="2" Grid.Row="1" Content="Cancel" Margin="5" Click="Cancel_Click"/>

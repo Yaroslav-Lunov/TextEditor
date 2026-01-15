@@ -26,6 +26,7 @@
                 <MenuItem Header="Open" Click="Open_Click"/>
                 <MenuItem Header="Save" Click="Save_Click"/>
                 <MenuItem Header="Save As" Click="SaveAs_Click"/>
+                <MenuItem Header="Update" Click="Update_Click"/>
                 <Separator/>
                 <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
@@ -43,13 +44,16 @@
             </MenuItem>
             <MenuItem Header="Format">
                 <MenuItem Header="Wrap Text" Click="Wrap_Click"/>
+                
             </MenuItem>
         </Menu>
         <TextBox Grid.Row="1" Name="textBox" AcceptsReturn="True" 
                  VerticalScrollBarVisibility="Auto" 
                  HorizontalScrollBarVisibility="Auto" 
                  TextWrapping="Wrap"
-                 SelectionChanged="TextBox_SelectionChanged"/>
+                 SelectionChanged="TextBox_SelectionChanged"
+                 FontFamily="Consolas"
+                 FontSize="14"/>
         <Label Grid.Row="2" Content="Started" Name="infoBar"/>
         
     </Grid>
